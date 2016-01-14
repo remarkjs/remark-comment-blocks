@@ -1,6 +1,6 @@
 {
   "name": "remark-comment-blocks",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Wrap Markdown with a comment block.",
   "main": "dist/index.js",
   "files": [
