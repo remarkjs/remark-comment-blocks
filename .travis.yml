@@ -7,4 +7,4 @@ node_js:
   - '0.12'
 
 after_success:
-  - './node_modules/.bin/nyc report --reporter=text-lcov && cat coverage/lcov.info | ./node_modules/.bin/coveralls'
+  - './node_modules/.bin/nyc report --reporter=lcov && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls'
