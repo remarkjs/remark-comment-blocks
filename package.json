@@ -8,9 +8,10 @@
     "dist"
   ],
   "scripts": {
+    "report": "nyc report --reporter html",
     "lint": "eslint src",
-    "prepublish": "de dist && babel src --out-dir dist --ignore /__tests__/",
-    "test": "npm run lint && nyc --babel --reporter=lcov --reporter=text ava src/__tests__"
+    "prepublish": "de dist && BABEL_ENV=publish babel src --out-dir dist --ignore /__tests__/",
+    "test": "npm run lint && nyc --babel --reporter=text ava src/__tests__"
   },
   "devDependencies": {
     "ava": "^0.10.0",
@@ -26,7 +27,6 @@
     "remark": "^3.1.3"
   },
   "dependencies": {
-    "object-assign": "^4.0.1",
     "trim-right": "^1.0.1"
   },
   "keywords": [

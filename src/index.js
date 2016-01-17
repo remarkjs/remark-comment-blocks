@@ -1,14 +1,14 @@
-import assign from 'object-assign';
 import trimRight from 'trim-right';
 
 export default function (remark, opts) {
     const Compiler = remark.Compiler;
 
-    const {start, middle, end} = assign({
+    const {start, middle, end} = {
         start:  '/**\n',
         middle: ' * ',
-        end:  '\n */\n'
-    }, opts);
+        end:  '\n */\n',
+        ...opts
+    };
 
     class CommentBlockCompiler extends Compiler {
         root (node) {
