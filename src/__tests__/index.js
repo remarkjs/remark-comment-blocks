@@ -1,3 +1,7 @@
+// This is required to transpile the *module* code when
+// running the tests.
+import 'babel-core/register';
+
 import ava from 'ava';
 import comments from '..';
 import remark from 'remark';

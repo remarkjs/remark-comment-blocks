@@ -8,10 +8,9 @@
     "dist"
   ],
   "scripts": {
-    "copy-fixtures": "ncp src/__tests__/fixtures dist/__tests__/fixtures",
     "lint": "eslint src",
     "prepublish": "de dist && babel src --out-dir dist --ignore /__tests__/",
-    "test": "npm run lint && babel src --out-dir dist && npm run copy-fixtures && nyc --reporter=lcov --reporter=text ava dist/__tests__"
+    "test": "npm run lint && nyc --babel --reporter=lcov --reporter=text ava src/__tests__"
   },
   "devDependencies": {
     "ava": "^0.10.0",
@@ -23,7 +22,6 @@
     "coveralls": "^2.11.6",
     "del-cli": "^0.1.2",
     "eslint": "^1.10.3",
-    "ncp": "^2.0.0",
     "nyc": "^5.3.0",
     "remark": "^3.1.3"
   },
