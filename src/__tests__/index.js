@@ -1,8 +1,8 @@
-import ava from 'ava';
-import comments from '..';
-import remark from 'remark';
 import {readdirSync as directory, readFileSync as file} from 'fs';
 import {join} from 'path';
+import ava from 'ava';
+import remark from 'remark';
+import comments from '..';
 
 const base = join(__dirname, 'fixtures');
 

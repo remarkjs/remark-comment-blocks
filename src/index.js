@@ -8,11 +8,11 @@ export default function (remark, opts) {
         start:  '/**\n',
         middle: ' * ',
         end:  '\n */\n',
-        ...opts
+        ...opts,
     };
-    
+
     visitors.root = function (node) {
-        let markdown = root.call(this, node);
+        const markdown = root.call(this, node);
         return start + markdown.split('\n').slice(0, -1).map(line => {
             return line.length ? `${middle}${line}` : trimRight(middle);
         }).join('\n') + end;
