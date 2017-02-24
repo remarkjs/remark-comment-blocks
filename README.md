@@ -19,7 +19,7 @@ var remark = require('remark');
 var comments = require('remark-comment-blocks');
 
 var markdown = 'Hello, world!';
-var result = remark.use(comments).process(markdown);
+var result = remark.use(comments).processSync(markdown);
 console.log(result);
 ```
 
