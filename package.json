@@ -11,8 +11,7 @@
     "report": "nyc report --reporter html",
     "pretest": "eslint src",
     "prepublish": "del-cli dist && BABEL_ENV=publish babel src --out-dir dist --ignore /__tests__/",
-    "test": "nyc ava src/__tests__",
-    "test-012": "nyc ava src/__tests__"
+    "test": "nyc ava src/__tests__"
   },
   "devDependencies": {
     "ava": "^0.18.0",
