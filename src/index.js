@@ -1,7 +1,7 @@
 import trimRight from 'trim-right';
 
-export default function (remark, opts) {
-    const {visitors} = remark.Compiler.prototype;
+export default function (opts) {
+    const {visitors} = this.Compiler.prototype;
     const {root} = visitors;
 
     const {start, middle, end} = {

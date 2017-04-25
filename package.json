@@ -15,7 +15,7 @@
     "test-012": "nyc ava src/__tests__"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
+    "ava": "^0.18.0",
     "babel-cli": "^6.5.1",
     "babel-core": "^6.5.2",
     "babel-plugin-add-module-exports": "^0.2.0",
@@ -30,7 +30,7 @@
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^2.0.1",
     "nyc": "^10.0.0",
-    "remark": "^6.0.0"
+    "remark": "^7.0.0"
   },
   "dependencies": {
     "trim-right": "^1.0.1"
